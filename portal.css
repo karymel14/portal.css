@@ -1,0 +1,223 @@
+
+/* General Page Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+}
+
+/* Header */
+.header {
+    background-color: #003366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Information Bar */
+.info-bar {
+    background-color: #FFB81C;
+    color: #003366;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+}
+
+/* Main Container */
+.container {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    color: #003366;
+    text-align: center;
+}
+
+.instruction {
+    text-align: center;
+    color: #666666;
+}
+
+/* Taxpayer Toggle Buttons */
+.taxpayer-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+/* Hide the original radio circles */
+.taxpayer-options input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Toggle Button Appearance */
+.taxpayer-options label {
+    display: inline-block;
+    padding: 18px 30px;
+    background-color: #eeeeee;
+    color: #003366;
+    border: 2px solid #003366;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Selected Toggle Button */
+.taxpayer-options input[type="radio"]:checked + label {
+    background-color: #003366;
+    color: white;
+    border-color: #FFB81C;
+}
+
+/* Keyboard Focus */
+.taxpayer-options input[type="radio"]:focus + label {
+    outline: 3px solid #FFB81C;
+}
+
+/* Fieldset */
+fieldset {
+    border: 2px solid #003366;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+/* Fieldset Legend */
+legend {
+    color: #003366;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Form Labels */
+.form-group > label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #003366;
+}
+
+/* Text Inputs, Select and File */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Input Focus */
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #003366;
+    box-shadow: 0 0 4px #FFB81C;
+}
+
+/* Gender Radio Buttons */
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-group input {
+    width: auto;
+}
+
+.radio-group label {
+    margin-right: 20px;
+}
+
+/* Next Button */
+.button-container {
+    text-align: right;
+    margin-top: 25px;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Button Hover */
+button:hover {
+    background-color: #FFB81C;
+    color: #003366;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .taxpayer-options {
+        flex-direction: column;
+    }
+
+    .taxpayer-options label {
+        font-size: 16px;
+    }
+
+    .container {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+}
